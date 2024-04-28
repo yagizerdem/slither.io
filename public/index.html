@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slither io</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Slither io</h1>
+      <span>rules</span>
+      <ul>
+        <li>control with arrow keys</li>
+        <li>arrow up dash</li>
+        <li>grow by eating food</li>
+        <li>slither io rules are valid</li>
+      </ul>
+      <button id="start">start</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+    </script>
+
+    <script src="Util.js"></script>
+    <script src="cell.js"></script>
+    <script src="snake.js"></script>
+    <script src="SD.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
